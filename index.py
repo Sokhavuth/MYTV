@@ -55,8 +55,8 @@ settings.configure(
 
 )
 
-#import django
-#django.setup()
+import django
+django.setup()
 
 urlpatterns = [
     path("", include('mysite.urls')),
