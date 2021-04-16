@@ -11,9 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 settings.configure(
     
-    DEBUG=True,
-    
-    ALLOWED_HOSTS=[],
+    DEBUG=False,
+
+    ALLOWED_HOSTS=["*"],
 
     ROOT_URLCONF=__name__,
 
