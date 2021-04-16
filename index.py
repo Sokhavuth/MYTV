@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 settings.configure(
     #(os.environ.get("DEBUG", "") == "1")
     DEBUG= True,
-    ALLOWED_HOSTS=[],
+    ALLOWED_HOSTS=["*"],
     ROOT_URLCONF=__name__,
     SECRET_KEY=get_random_string(50),
 
@@ -50,6 +50,28 @@ settings.configure(
                     'django.contrib.messages.context_processors.messages',
                 ],
             },
+        },
+    ],
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    },
+
+    AUTH_PASSWORD_VALIDATORS = [
+        {
+            'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        },
+        {
+            'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        },
+        {
+            'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        },
+        {
+            'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
         },
     ],
 
