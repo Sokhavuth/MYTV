@@ -11,9 +11,9 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 settings.configure(
-
-    DEBUG=(os.environ.get("DEBUG", "") == "1"),
-    ALLOWED_HOSTS=["*"],
+    #(os.environ.get("DEBUG", "") == "1")
+    DEBUG= True,
+    ALLOWED_HOSTS=[],
     ROOT_URLCONF=__name__,
     SECRET_KEY=get_random_string(50),
 
@@ -52,6 +52,10 @@ settings.configure(
             },
         },
     ],
+
+    STATIC_URL = '/static/',
+
+    DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 )
 
