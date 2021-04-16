@@ -6,10 +6,10 @@ from django.core.wsgi import get_wsgi_application
 from django.http import HttpResponse
 from django.urls import include, path
 from django.utils.crypto import get_random_string
-from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 
+'''
 settings.configure(
     #(os.environ.get("DEBUG", "") == "1")
     DEBUG= True,
@@ -17,14 +17,14 @@ settings.configure(
     ROOT_URLCONF=__name__,
     SECRET_KEY=get_random_string(50),
 )
-
-import django
-django.setup()
-
+'''
+#import django
+#django.setup()
+'''
 urlpatterns = [
     path("", include('mysite.urls')),
 ]
-
+'''
 app = get_wsgi_application()
 
 if __name__ == "__main__":
