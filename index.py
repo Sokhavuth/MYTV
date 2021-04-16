@@ -14,16 +14,9 @@ settings.configure(
     SECRET_KEY=get_random_string(50),
 )
 
-def index(request):
-    return HttpResponse("Hello, world!")
-
-
 urlpatterns = [
     path("", include('mysite.urls')),
 ]
-
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 
 app = get_wsgi_application()
 
