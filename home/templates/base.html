@@ -8,19 +8,15 @@
     
     {% load static %}
     <link rel="stylesheet" href="{% static 'styles/base.css' %}">
-
+    <link rel="stylesheet" href="{% static 'fonts/setup.css' %}">
     <link rel="icon" href="{% static 'images/site_logo.png' %}" >
     
     
-    {% block head %}<!-- to add -->{% endblock %}
+    {% block insert_into_head %}<!-- to add -->{% endblock %}
   </head>
   <body>
-    {% block menu %}
-    <div class="menu">
-
-    </div>
-    {% endblock %}
-
+    {% include 'partials/menu.html' %}
+      
     {% block main %}
     <div class='main'>
       {% block content %}<!-- default content text (typically empty) -->{% endblock %}
