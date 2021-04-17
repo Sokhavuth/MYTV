@@ -13,12 +13,17 @@
   font: 35px/1.5 Lobster;
 }
 
+.top-menu .logo a{
+  color: white;
+}
+
 .top-menu .login{
   text-align: right;
 }
 
+
 .top-menu, .top-menu .topnav{
-  background: #b30000;
+  background: rgb(104, 0, 0);
 }
 
 .top-menu .topnav {
@@ -36,13 +41,8 @@
   font-family: Oswald;
 }
 
-.top-menu .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .top-menu .topnav a.active {
-  background-color: maroon;
+  background-color: rgb(168, 0, 0);
   color: white;
 }
 

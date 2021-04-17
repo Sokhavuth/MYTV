@@ -4,23 +4,24 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Khmer Web MyTV</title>
+    <title>Khmer Web TV</title>
     
     {% load static %}
     <link rel="stylesheet" href="{% static 'styles/base.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/setup.css' %}">
     <link rel="icon" href="{% static 'images/site_logo.png' %}" >
     
-    
     {% block insert_into_head %}<!-- to add -->{% endblock %}
   </head>
   <body>
     {% include 'partials/menu.html' %}
-      
+
+    {% block channel %}<!-- channel -->{% endblock %}
+
     {% block main %}
     <div class='main'>
-      {% block content %}<!-- default content text (typically empty) -->{% endblock %}
-      {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock %}
+      {% block content %}<!-- content -->{% endblock %}
+      {% block sidebar %}<!-- sidebar -->{% endblock %}
     </div>
     {% endblock %}
 
