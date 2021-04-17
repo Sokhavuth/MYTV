@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Khmer Web MyTV</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/base.css' %}">
+
+    <link rel="icon" href="{% static 'images/site_logo.png' %}" >
+    
+    
+    {% block head %}<!-- to add -->{% endblock %}
+  </head>
+  <body>
+    {% block menu %}
+    <div class="menu">
+
+    </div>
+    {% endblock %}
+
+    {% block main %}
+    <div class='main'>
+      {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+      {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock %}
+    </div>
+    {% endblock %}
+
+    {% block footer %}<!-- footer --> {% endblock %}
+  </body>
+</html>
