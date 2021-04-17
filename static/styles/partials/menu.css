@@ -70,4 +70,18 @@
     display: block;
     text-align: left;
   }
+
+  .top-menu .menu-wrpper{
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .top-menu .login{
+    text-align: center;
+  }
+
+  .top-menu .topnav{
+    background: #940000;
+    margin: 10px 0;
+  }
 }
