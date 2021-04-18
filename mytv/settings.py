@@ -74,7 +74,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mytv.wsgi.application'
 
-#dd
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -87,8 +86,6 @@ DATABASES = {
         }
     }
 }
-
-# DATABASES = {   ‘default’: {      ‘ENGINE’: ‘djongo’,      ‘NAME’: ‘your-db-name’,   }}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
