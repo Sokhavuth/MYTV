@@ -74,7 +74,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mytv.wsgi.application'
 
-
+#dd
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
