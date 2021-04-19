@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block channel %}
+<div style='margin-top: 30px;' class='player-title widget region'>YouTube Channnels</div>
 <div class="channel widget region">
 
   <div class="wrapper">
@@ -23,21 +24,21 @@
   </div>
 
   <div class="wrapper">
-    <iframe  src="https://www.youtube.com/embed/videoseries?list=UU8butISFwT-Wl7EV0hUK0BQ" 
+    <iframe  src="https://www.youtube.com/embed/videoseries?list=UULA_DiR1FfKNvjuUpBHmylQ" 
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
       picture-in-picture" allowfullscreen>
     </iframe>
   </div>
 
   <div class="wrapper">
-    <iframe  src="https://www.youtube.com/embed/videoseries?list=UUFbNIlppjAuEX4znoulh0Cw" 
+    <iframe  src="https://www.youtube.com/embed/videoseries?list=UUpcTrCXblq78GZrTUTLWeBw" 
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
       picture-in-picture" allowfullscreen>
     </iframe>
   </div>
 
   <div class="wrapper">
-    <iframe  src="https://www.youtube.com/embed/videoseries?list=UUWv7vMbMWH4-V0ZXdmDpPBA" 
+    <iframe  src="https://www.youtube.com/embed/videoseries?list=UUh2rDh7vXGeoh1LlzL3QEwg" 
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
       picture-in-picture" allowfullscreen>
     </iframe>
@@ -45,3 +46,12 @@
   
 </div>
 {% endblock %}
+
+{% block main %}
+<div class='main region'>
+
+  {% include 'partials/mplayer.html' %}
+
+</div>
+{% endblock %}
+

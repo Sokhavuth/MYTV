@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Khmer Web TV</title>
+    <title>{{ blog_title }}</title>
     
     {% load static %}
     <link rel="stylesheet" href="{% static 'styles/base.css' %}">
@@ -19,12 +19,13 @@
     {% block channel %}<!-- channel -->{% endblock %}
 
     {% block main %}
-    <div class='main'>
-      {% block content %}<!-- content -->{% endblock %}
-      {% block sidebar %}<!-- sidebar -->{% endblock %}
-    </div>
+    
     {% endblock %}
 
-    {% block footer %}<!-- footer --> {% endblock %}
+    {% block footer %}
+    
+    {% include 'partials/footer.html' %}
+
+    {% endblock %}
   </body>
 </html>

@@ -1,0 +1,52 @@
+{% block insert_into_head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/partials/mplayer.css' %}" />
+{% endblock %}
+
+<div class='player-title widget'>Random Single Movies</div>
+
+<div class='mplayer widget'>
+
+  <div class='wrapper'>
+    <iframe  src="https://www.youtube.com/embed/{{ id_list.0 }}" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+      picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class='wrapper'>
+    <iframe  src="https://www.youtube.com/embed/{{ id_list.1 }}" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+      picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class='wrapper'>
+    <iframe  src="https://www.youtube.com/embed/{{ id_list.2 }}" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+      picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class='wrapper'>
+    <iframe  src="https://www.youtube.com/embed/{{ id_list.3 }}" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+      picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class='wrapper'>
+    <iframe  src="https://www.youtube.com/embed/{{ id_list.4 }}" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+      picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class='wrapper'>
+    <iframe  src="https://www.youtube.com/embed/{{ id_list.5 }}" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+      picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+</div>

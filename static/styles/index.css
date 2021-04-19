@@ -1,5 +1,11 @@
+.player-title{
+  text-align: center;
+  font: 20px/1.5 Oswald;
+  border-bottom: 2px solid grey;
+  padding: 5px;
+}
+
 .channel{
-  margin-top: 30px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -64,6 +70,7 @@
   .channel .wrapper:nth-child(5){
     grid-column: 1 / span 1;
   }
+
 
 }
 
